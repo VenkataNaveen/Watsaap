@@ -1,0 +1,22 @@
+.example-fill-remaining-space{
+    flex: 1 1 auto;
+}
+.example-icon {
+ padding: 0 14px;
+}
+
+.mat-tool-bar{
+    background-color: #00bfa8;
+    height:5%;
+    font-size: 100%;
+    padding: 0 0 0 1%;
+    min-height: 2%;
+}
+.mat-tool-row{
+    background-color:#00bfa8;
+    height:100%;
+    padding: 0;
+}
+.homebody{
+    height: 95%;
+}

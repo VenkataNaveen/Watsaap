@@ -1,0 +1,37 @@
+<div fxLayout="column" style="height: 100%;">
+       <mat-toolbar style="border-right: 1px solid gainsboro;height: 10%;" class="app-header-component">
+           <mat-toolbar-row>
+                <img [src]="imgrSrc" class="example-header-image">
+                <span class="flex-between"></span>
+                <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">minimize</mat-icon>
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">aspect_ratio</mat-icon>
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">close</mat-icon>
+           </mat-toolbar-row>
+       </mat-toolbar>
+       <div fxLayout="column" style="height: 90%; ">
+           <div style="background-color: #f9f9f9;height:10%;">
+         <mat-form-field style="width: 100%;">
+            <div fxLayout fxLayoutAlign="space-around">
+                    <input matInput type="search"  class="contactinput-search">
+            </div>
+            
+         </mat-form-field>
+        </div>
+        <div style="height:90%;">
+         <perfect-scrollbar > 
+         <mat-list>
+                <mat-list-item *ngFor="let folder of folders">
+                <div fxLayout="row">
+                        <img [src]="imgrSrc" class="example-header-image">
+                        <div fxLayout="column">
+                         <span>ABC</span>
+                         <span> ABC </span>
+                        </div>
+                </div>  
+                <mat-divider></mat-divider>
+               </mat-list-item>
+         </mat-list>
+         </perfect-scrollbar>
+        </div>
+       </div>
+</div>
